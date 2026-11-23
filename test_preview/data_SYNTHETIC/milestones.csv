@@ -1,0 +1,6 @@
+nct_id,position_vs_analysis_date,primary_completion,primary_completion_type,precision,status_in_snapshot,last_update_posted,results_posted,phase,test_interventions,mechanisms,modalities,lead_sponsor
+NCT99000002,in window,2026-11,ESTIMATED,month,RECRUITING,2026-01-01,False,Ph 1/2,Tofersen cohort A; Tofersen cohort B; Tofersen,SOD1,ASO,Synthetic Sponsor
+NCT99000001,in window,2027-03,ESTIMATED,month,RECRUITING,2026-01-01,False,Ph 2,Masitinib,Neuroinflammation & immune,Small molecule,Synthetic Sponsor
+NCT99000009,in window,2027-10-15,ESTIMATED,day,RECRUITING,2026-01-01,False,Ph 1/2,VTx-002,TDP-43 biology,Vectorized antibody,Synthetic Sponsor
+NCT99000007,in window,2028-06,ESTIMATED,month,RECRUITING,2026-01-01,False,Ph 3,CNM-Au8,Mitochondria & cell stress,Inorganic nanocrystal,Synthetic Sponsor
+NCT99000008,passed,2026-10,ESTIMATED,month,RECRUITING,2026-01-01,False,Ph 2,Ibudilast or placebo capsules,Neuroinflammation & immune,Small molecule,Synthetic Sponsor

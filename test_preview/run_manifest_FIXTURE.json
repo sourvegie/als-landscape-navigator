@@ -1,0 +1,36 @@
+{
+  "analysis_date": "2026-11-18",
+  "analysis_date_source": "fixed for the synthetic fixture",
+  "build_timestamp_utc": "2026-11-20T00:00:00Z",
+  "classification_version": "2.0.0",
+  "counts": {
+    "active": 7,
+    "active_classified": 5,
+    "drug_type": 8,
+    "interventional": 9,
+    "milestones_in_window": 4
+  },
+  "fixture": true,
+  "input_sha256": {
+    "asset_curation.csv": "553c3719a46d9cad2a8fe61c8cbda010ee3ddffd537f3f3b7dd0ca3c01d93c01"
+  },
+  "output_sha256": {
+    "interventions.csv": "d762e237d4145a79ada4e8155afbee44047513daf898fcf13aa271b58f42d2ff",
+    "milestones.csv": "061323c4fd0c7962736aa727333302879f5c902c3193928306c74c29257d11bc",
+    "targets.csv": "1d9fa90e3bbf975485c23f31bc2006f07b5249189f20facbf0c4561e1900e855",
+    "trials.csv": "2fac8997ad210d899bc3ebad2a82024c8d91604fa6d05939c2975012c6dbea4c",
+    "unclassified_interventions.csv": "c8cd1e10f09d2d99b6f771bcf699bfbea0dff79196d2f416e774534d469aa874"
+  },
+  "queries": {
+    "ClinicalTrials.gov": "API v2 /studies, query.cond=\"amyotrophic lateral sclerosis\", pageSize=1000, all pages; analysis keeps studyType=INTERVENTIONAL only",
+    "Open Targets": "search \"amyotrophic lateral sclerosis\" -> disease ID; associatedTargets top 30 by overall score",
+    "PubMed": "esearch counts, \"amyotrophic lateral sclerosis\"[tiab] AND <gene>[tiab] (aliases for TARDBP, C9orf72); top 20 Open Targets genes plus SOD1, C9orf72, FUS, TARDBP, ATXN2; recent window = last 5 calendar years by publication date"
+  },
+  "source_retrieved": {
+    "ClinicalTrials.gov": "2026-11-18T00:00:00",
+    "Open Targets": "2026-11-18T00:00:00",
+    "PubMed": "2026-11-18T00:00:00"
+  },
+  "trials_fingerprint": "3434ac0a3e72dae5",
+  "validation_state": "not measured"
+}

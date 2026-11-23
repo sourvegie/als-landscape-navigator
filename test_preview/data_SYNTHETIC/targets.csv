@@ -1,0 +1,6 @@
+symbol,name,ensembl,ot_score,genetic_association_score,literature_score,pubmed_total,pubmed_recent,pubmed_status,mapping_state,curated_assets,direct_active_trials,direct_all_trials,direct_active_trial_ids,bucket_proxy,bucket_proxy_active_trials,bucket_proxy_all_trials,flag
+SOD1,synthetic SOD1,ENSG_SYN_SOD1,0.8,0.9,,10,3,retrieved,mapped: matching trials identified,AMT-162; AP-101; ARO-SOD1; tofersen,1,1,NCT99000002,SOD1,1,1,
+TARDBP,synthetic TARDBP,ENSG_SYN_TARDBP,0.8,0.9,,0,0,retrieved,mapped: matching trials identified,VTx-002; nL-TARDBP-ASO,1,1,NCT99000009,TDP-43 biology,1,1,
+ATXN2,synthetic ATXN2,ENSG_SYN_ATXN2,0.8,0.9,,,,not retrieved,mapped: no matching trials identified in searched dataset,BIIB105,0,0,,ATXN2,0,0,review: no trial found via curated assets
+UNMAPPEDGENE,synthetic UNMAPPEDGENE,ENSG_SYN_UNMAPPEDGENE,0.8,0.99,,,,not retrieved,mapping not implemented,,not assessed,not assessed,,,,,
+NOGENETIC,synthetic NOGENETIC,ENSG_SYN_NOGENETIC,0.8,,,,,not retrieved,mapping not implemented,,not assessed,not assessed,,,,,

@@ -1,0 +1,42 @@
+# Regression-check results - generated 2026-11-20 with: python3 -m unittest discover -s tests -v ; python3 tests/mutation_smoke.py
+# These are software regression checks. They are not a measure of classification accuracy.
+test_all_records (test_navigator.TestCNMAu8.test_all_records) ... ok
+test_generic_gene_therapy_keyword_not_aav (test_navigator.TestGeneticNotAAV.test_generic_gene_therapy_keyword_not_aav) ... ok
+test_sampling_genetic_excluded (test_navigator.TestGeneticNotAAV.test_sampling_genetic_excluded) ... ok
+test_unknown_genetic_unresolved (test_navigator.TestGeneticNotAAV.test_unknown_genetic_unresolved) ... ok
+test_ins1202_unresolved (test_navigator.TestGeneticSnapshot.test_ins1202_unresolved) ... ok
+test_curation_file_well_formed (test_navigator.TestKnownAnswerRegression.test_curation_file_well_formed) ... ok
+test_known_answers (test_navigator.TestKnownAnswerRegression.test_known_answers) ... ok
+test_day_precision (test_navigator.TestMonthOnlyDates.test_day_precision) ... ok
+test_month_precision_not_overdue_before_month_end (test_navigator.TestMonthOnlyDates.test_month_precision_not_overdue_before_month_end) ... ok
+test_pipeline_uses_analysis_date (test_navigator.TestMonthOnlyDates.test_pipeline_uses_analysis_date) ... ok
+test_snapshot_NCT04454840 (test_navigator.TestPlasmaPlusRiluzole.test_snapshot_NCT04454840) ... ok
+test_synthetic_combination (test_navigator.TestPlasmaPlusRiluzole.test_synthetic_combination) ... ok
+test_analysis_date_controls_results (test_navigator.TestReproducibility.test_analysis_date_controls_results) ... ok
+test_identical_inputs_identical_outputs (test_navigator.TestReproducibility.test_identical_inputs_identical_outputs) ... ok
+test_background_vs_experimental (test_navigator.TestRoles.test_background_vs_experimental) ... ok
+test_blinded_or_placebo_name_is_test (test_navigator.TestRoles.test_blinded_or_placebo_name_is_test) ... ok
+test_description_keyword_is_candidate_only (test_navigator.TestRoles.test_description_keyword_is_candidate_only) ... ok
+test_placebo_to_match_is_placebo (test_navigator.TestRoles.test_placebo_to_match_is_placebo) ... ok
+test_supportive_premedication_is_background (test_navigator.TestRoles.test_supportive_premedication_is_background) ... ok
+test_partial_rows_not_errors (test_navigator.TestSeparateDenominators.test_partial_rows_not_errors) ... ok
+test_stale_results_invalidated (test_navigator.TestSeparateDenominators.test_stale_results_invalidated) ... ok
+test_status_not_measured_without_results (test_navigator.TestSeparateDenominators.test_status_not_measured_without_results) ... ok
+test_bucket_proxy_is_separate_from_direct (test_navigator.TestTargetMappingStates.test_bucket_proxy_is_separate_from_direct) ... ok
+test_snapshot_unmapped_not_flagged (test_navigator.TestTargetMappingStates.test_snapshot_unmapped_not_flagged) ... ok
+test_three_explicit_states (test_navigator.TestTargetMappingStates.test_three_explicit_states) ... ok
+test_unmapped_targets_never_flagged (test_navigator.TestTargetMappingStates.test_unmapped_targets_never_flagged) ... ok
+test_missing_genetic_score_not_zero (test_navigator.TestUnavailableIsNotZero.test_missing_genetic_score_not_zero) ... ok
+test_open_targets_unavailable (test_navigator.TestUnavailableIsNotZero.test_open_targets_unavailable) ... ok
+test_pubmed_missing_symbol_is_not_retrieved (test_navigator.TestUnavailableIsNotZero.test_pubmed_missing_symbol_is_not_retrieved) ... ok
+test_pubmed_unavailable (test_navigator.TestUnavailableIsNotZero.test_pubmed_unavailable) ... ok
+test_repeated_cohorts_count_once (test_navigator.TestUniqueTrialCounting.test_repeated_cohorts_count_once) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 1.615s
+
+OK
+  caught: GENETIC defaults to AAV (1 failing test(s))
+  caught: month-only date overdue from day 1 (1 failing test(s))
+  caught: plasma+riluzole not split (1 failing test(s))
+  caught: background treated as experimental (1 failing test(s))

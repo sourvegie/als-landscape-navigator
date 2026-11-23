@@ -1,0 +1,39 @@
+{
+  "analysis_date": "2026-11-18",
+  "analysis_date_source": "defaults to the ClinicalTrials.gov retrieval date",
+  "build_timestamp_utc": "2026-11-20T00:00:00Z",
+  "classification_version": "2.0.0",
+  "counts": {
+    "active": 105,
+    "active_classified": 32,
+    "drug_type": 455,
+    "interventional": 724,
+    "milestones_in_window": 44
+  },
+  "fixture": false,
+  "input_sha256": {
+    "asset_curation.csv": "553c3719a46d9cad2a8fe61c8cbda010ee3ddffd537f3f3b7dd0ca3c01d93c01",
+    "ctgov_studies.json": "ee6f0acf07a1b8d90b755ec5c51ff7a9428d4e57ac8e3d2e268e401318808c9a",
+    "opentargets.json": "023e1c44c462950a4a80934eda2fb7a69c93849077708f488b7e9323f5ae5fda",
+    "pubmed_counts.json": "e4642f0c5878e81036f0190bd0d728208bcf7b858e3a8dce31111a6c039c9a0d"
+  },
+  "output_sha256": {
+    "interventions.csv": "e469e9d04ef2c0988c2f5a89e843b1aefed4d138a6a08f625d8ead222b3cff46",
+    "milestones.csv": "7b8d4858168249a64e32df8bb825d999588fde5c7c2b35e5974771aef4288eed",
+    "targets.csv": "c0500fc3bc90ba1e7b292abc5f0e06aad2644026be9c71c9addf09eee3a69d0f",
+    "trials.csv": "9b1bd37f5bfeab49af99d939d95df424c53669d9310309b35cab18659cdd2c74",
+    "unclassified_interventions.csv": "e0000f57ffcd9684e1b0f81100f8c78df87a77a9b50e901c163a80400d14f240"
+  },
+  "queries": {
+    "ClinicalTrials.gov": "API v2 /studies, query.cond=\"amyotrophic lateral sclerosis\", pageSize=1000, all pages; analysis keeps studyType=INTERVENTIONAL only",
+    "Open Targets": "search \"amyotrophic lateral sclerosis\" -> disease ID; associatedTargets top 30 by overall score",
+    "PubMed": "esearch counts, \"amyotrophic lateral sclerosis\"[tiab] AND <gene>[tiab] (aliases for TARDBP, C9orf72); top 20 Open Targets genes plus SOD1, C9orf72, FUS, TARDBP, ATXN2; recent window = last 5 calendar years by publication date"
+  },
+  "source_retrieved": {
+    "ClinicalTrials.gov": "2026-11-18T13:13:48",
+    "Open Targets": "2026-11-18T13:13:49",
+    "PubMed": "2026-11-18T13:13:49"
+  },
+  "trials_fingerprint": "ab20133b88122c70",
+  "validation_state": "not measured"
+}

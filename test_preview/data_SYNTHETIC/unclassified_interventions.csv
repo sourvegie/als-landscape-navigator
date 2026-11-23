@@ -1,0 +1,4 @@
+intervention_name,n_trials,registry_type,current_modality,modality_tier,description_candidate_mechanism,candidate_rule,mechanism,modality,source,rationale
+Compound Q-77,1,DRUG,Small molecule,registry-type fallback,SOD1,kw-SOD1 (description: 'SOD1'),,,,
+Donor plasma infusion + Riluzole,1,BIOLOGICAL,Other biologic,registry-type fallback,,,,,,
+ZZX-901,1,GENETIC,Unresolved,unresolved,,,,,,
